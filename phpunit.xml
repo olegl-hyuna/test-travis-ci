@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+	backupStaticAttributes="false"
+	bootstrap="app/bootstrap.php"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	processIsolation="false"
+	stopOnFailure="true"
+	syntaxCheck="false">
+
+	<testsuites>
+		<testsuite name="units">
+			<directory>./Tests/</directory>
+		</testsuite>
+	</testsuites>
+
+	<php>
+		<env name="MY_ENV" value="tests"/>
+	</php>
+</phpunit>
